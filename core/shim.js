@@ -48,8 +48,7 @@ exports.createPlatformModule = function(platform) {
 
 	if (!platform.sendTyping) {
 		platform.sendTyping = function(thread) {
-			//TODO fix me
-			platform.sendMessage("Working on it...", thread); // fallback to sending a message
+			// fallback to sending nothing
 		}
 	}
 
